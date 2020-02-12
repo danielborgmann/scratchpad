@@ -1,0 +1,102 @@
+General Information
+===================
+
+Scratchpad is a spatial text editor for the GNOME desktop.
+It is based on gtksourceview, which provides most essential features for
+source code editing. On top of this Scratchpad offers a lightweight, intuitive
+and forward-thinking user interface as well as additional editing features to
+make your life easier.
+
+
+Philosophy
+==========
+
+Scratchpad strongly follows the "just works" philosophy and tries to
+smoothly integerate into the desktop environment. It has been created
+mainly out of dissatisfaction with existing GUI text editors and their
+inability to scale. Some text editors are simple to use, but lack the
+required features to work efficiently on larger projects. Other editors
+are incredibly bloated and a pain to use if all you want is to make a quick
+change to a README file. But the majority of the editors simply offers a bad
+compromise between both worlds, being limited in their capabilities while still
+sporting a rather clumsy interface.
+
+Scratchpad intends to avoid any compromise and prove that a capable text editor
+does not require a bloated user interface. To reach this goal, Scratchpad breaks 
+with many traditions, including file chooser dialogs and explicit saving.
+Whenever possible, it tries to find solutions that do the right thing in
+every situation by requiring the least amount of user intervention.
+
+Scratchpad is not particularly customisable, which means that it won't ever
+offer a plethora of options which serve no purpose but to satisfy individual
+taste or habits. Hopefully you will find that getting used to the way Scratchpad
+works is well worth the effort. If you are not willing to do so, then
+Scratchpad is just not for you.
+
+
+Documents vs. Projects
+======================
+
+To achieve the goal of scalability, Scratchpad separates between documents
+and projects. Every document and every project is treated as a unique spatial
+object. 
+
+The document interface is used whenever you open a document from your
+file manager (or by passing it as a command line argument) and is ideal to
+make quick changes, read text documents or work on smaller projects. All
+document state is persistent, so you can close and re-open a document at any
+time without losing state. The document interface offers all of Scratchpad's
+text editing capabilities from an interface that is not any more complex than
+Notepad.
+
+The project interface (not yet completed) differs from the document interface
+mainly by focusing on quick access to documents related to a project. New
+sources can easily be added to the file tree on the left of the window.
+Because all document state is persistent and there can be no "unsaved" changes,
+there is no need to keep a separate list of "open" documents (popularly
+implemented as notebook tabs). Scratchpad still uses MDI internally to
+provide instant access to the last recently accessed documents. These documents
+are also exposed on the interface and can be quickly selected with shortcuts,
+thus combining the ease of use of an SDI interface with all the advantages
+of an MDI interface.
+
+
+Features
+========
+
+I am not going to give you a comprehensive list of Scratchpad's features, since
+they are likely to change and Scratchpad is really more focused on the whole
+user experience than individual technical details. Instead, I will use this
+place to list all the little things that may not be completely obvious.
+
+* If you activate the Cut or Copy command without a selection, it will act on
+  the entire line (same as the Block Cut/Copy commands). This makes it quick
+  and easy to delete or re-locate lines.
+  
+* The type-ahead search becomes case-sensitive as soon as you type a non
+  lower-case letter.
+  
+* In Go-to-line mode, you can use the up and down arrow keys to move up or
+  down in steps of ten. Hold shift to move in steps of 100.
+  
+* Word-wrap defaults to on for plain text files and off for everything else.
+  Once you change the wrap mode, it will be permantly stored for the document.
+  
+* To replace text, first add some tags (for example by pressing <shift><ctrl>F
+  to tag all matches of the last search) and then press <ctrl>R to enter the
+  text you want to replace with. You can add and remove as many tags as you want
+  before you replace and you can replace them as often as you want.
+  Use <shift><ctrl>T without a selection to clear all tags in a document.
+  
+  
+Contact
+=======
+
+The official homepage is located at:
+
+	http://dborg.wordpress.com/scratchpad/
+	
+If you have any comments or suggestions or are interested in contributing,
+please join the mailinglist:
+
+	http://groups.google.com/group/scratchpad

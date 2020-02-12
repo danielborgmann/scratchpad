@@ -1,0 +1,24 @@
+<gconfschemafile>
+	<schemalist>
+		<schema>
+			<key>/schemas/apps/scratchpad/show_line_numbers</key>
+			<applyto>/apps/scratchpad/show_line_numbers</applyto>
+			<owner>scratchpad</owner>
+			<type>bool</type>
+			<locale name="C">
+				<short>Show line numbers</short>
+			</locale>
+			<default>false</default>
+		</schema>
+		<schema>
+			<key>/schemas/apps/scratchpad/show_margin</key>
+			<applyto>/apps/scratchpad/show_margin</applyto>
+			<owner>scratchpad</owner>
+			<type>bool</type>
+			<locale name="C">
+				<short>Show margin</short>
+			</locale>
+			<default>false</default>
+		</schema>
+	</schemalist>
+</gconfschemafile>

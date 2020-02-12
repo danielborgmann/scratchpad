@@ -1,0 +1,44 @@
+<ui>		
+	<menubar name="menubar">
+		<menu action="file">
+			<menuitem action="open-folder"/>
+			<separator/>
+			<menuitem action="close"/>
+		</menu>
+		<menu action="edit">
+			<menuitem action="undo"/>
+			<menuitem action="redo"/>
+			<separator/>
+			<menuitem action="cut"/>
+			<menuitem action="copy"/>
+			<menuitem action="paste"/>
+			<separator/>
+			<menuitem action="block-cut"/>
+			<menuitem action="block-copy"/>
+			<separator/>
+			<menuitem action="new-line"/>
+			<separator/>
+			<menuitem action="find"/>
+			<menu action="tags">
+				<menuitem action="tag-add"/>
+				<menuitem action="tag-add-and-search"/>
+				<menuitem action="tag-remove"/>
+				<menuitem action="tag-search"/>
+			</menu>
+			<menuitem action="replace"/>
+			<menuitem action="goto-line"/>
+			<separator/>
+			<menuitem action="select-all"/>
+		</menu>
+		<menu action="view">
+			<menuitem action="line-numbers"/>
+			<menuitem action="margin"/>
+		</menu>
+		<menu action="document">
+			<menuitem action="word-wrap"/>
+		</menu>
+		<menu action="help">
+			<menuitem action="about"/>
+		</menu>
+	</menubar>
+</ui>

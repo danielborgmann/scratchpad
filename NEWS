@@ -1,0 +1,21 @@
+0.3.0
+=====
+New Features:
+- Complete port/rewrite to Vala, Scratchpad now runs (flys) natively!
+- Tag-based replace mechanism.
+- Use GUniqueApp for single instance behaviour, so startup notification
+  and focus stealing should work better now.
+  
+Removed Features:
+- No more GnomeVFS, waiting for GVFS!
+- Revisions. Wasn't happy with them, to be reconsidered.
+- Autosave and save options. Now defaults to save on focus out (saving
+  your laptop batteries).
+- Tools menu.
+  
+Bugfixes: 
+- It's practically a rewrite, so all bugs should be brand new!
+- Icon sucks less.
+
+Known Problems:
+- Font changes won't take effect immediately.

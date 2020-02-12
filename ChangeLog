@@ -1,0 +1,119 @@
+2008-11-11  Daniel Borgmann  <danielb@openismus.com>
+
+	* scratchpad/uimanager.vala: Kill the clutter
+
+2008-10-26  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* configure.ac:
+	* scratchpad/Makefile.am:
+	* scratchpad/application.vala:
+	* scratchpad/basewindow.vala:
+	* scratchpad/documentview.vala:
+	* vapi/guniqueapp.vapi: Remove guniqueapp, use libunique
+
+2008-10-25  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* configure.ac:
+	* scratchpad/Makefile.am:
+	* scratchpad/application.vala:
+	* scratchpad/document.vala:
+	* scratchpad/documentwindow.vala:
+	* scratchpad/settings.vala: Remove GnomeVFS dependency
+
+2008-10-25  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* configure.ac:
+	* scratchpad/Makefile.am:
+	* scratchpad/basewindow.vala:
+	* scratchpad/document.vala:
+	* scratchpad/documentview.vala:
+	* scratchpad/documentwindow.vala:
+	* scratchpad/metadata.vala:
+	* scratchpad/projecttree.vala:
+	* scratchpad/projectwindow.vala:
+	* scratchpad/settings.vala:
+	* scratchpad/uimanager.vala: Port to gtksourceview-2.0, fix Vala compilation
+
+2006-10-03  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* configure.ac: Bump version number
+	* scratchpad/Makefile.am: Add defines, remove config.vala 
+	* scratchpad/application.vala: Open project window, add SCRATCHPAD_INSTANCE env var
+	* scratchpad/basewindow.vala: Use defines
+	* scratchpad/documentwindow.vala: Use proper titlebar icon size
+	* vapi/misc-utils.vala: Add define constants
+
+2006-09-28  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* scratchpad/application.vala, scratchpad/basewindow.vala, 
+	  scratchpad/document.vala, scratchpad/documentview.vala:
+	  Patch by Jürg Billeter to compile with Vala SVN.
+
+2006-09-27  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* scratchpad/document.vala: Make save operation "atomical".
+
+2006-09-27  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* scratchpad/application.vala: Info dialog regarding project windows
+	* scratchpad/documentwindow.vala: Set window icon (should use mimtype, but still...)
+	* vapi/gnome-vfs-2.0.vala: Use correct cheader
+	* vapi/guniqueapp.vala: Add some bindings
+
+2006-09-26  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* scratchpad/basewindow.vala (on_action_activated): Fix close menu item
+	* scratchpad/application.vala (construct): Add url and email hooks
+	* scratchpad/basewindow.vala (show_about_dialog): Change website label
+
+2006-09-26  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* data/scratchpad-ui.xml:
+	* scratchpad/basewindow.vala:
+	* scratchpad/documentview.vala:
+	* scratchpad/searchentry.vala:
+	* scratchpad/uimanager.vala:
+	  Implement a tag-based replacing mechanism
+
+2006-09-25  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* scratchpad/basewindow.vala: Set default window position to center
+
+2006-09-24  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* scratchpad/application.vala:
+	* scratchpad/basewindow.vala:
+	* scratchpad/documentview.vala:
+	* scratchpad/documentwindow.vala:
+	* scratchpad/metadata.vala:
+	  Preserve cursor and scroll position
+
+2006-09-22  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* scratchpad/documentview.vala: Use TextBuffer.select_range() to simplify some code
+
+2006-09-21  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* scratchpad/documentview.vala (restore_selection): Fix selection on block copy 
+
+2006-09-21  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* Makefile.am:
+	* configure.ac:
+	* libguniqueapp/Makefile.am:
+	* libguniqueapp/guniqueapp-bacon.c:
+	* libguniqueapp/guniqueapp-bacon.h:
+	* libguniqueapp/guniqueapp-base.c:
+	* libguniqueapp/guniqueapp-base.h:
+	* libguniqueapp/guniqueapp-dbus.c:
+	* libguniqueapp/guniqueapp-dbus.h:
+	* libguniqueapp/guniqueapp-marshal.list:
+	* libguniqueapp/guniqueapp.c:
+	* libguniqueapp/guniqueapp.h:
+	* libguniqueapp/guniqueapp.xml:
+	* scratchpad/Makefile.am:
+	* scratchpad/application.vala:
+	* scratchpad/basewindow.vala:
+	* scratchpad/document.vala:
+	* scratchpad/documentwindow.vala:
+	  Add libgunique library and single instance behaviour

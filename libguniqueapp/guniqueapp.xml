@@ -1,0 +1,10 @@
+<node name="/">
+	<interface name="org.gnome.GUniqueAppInterface">
+		<method name="SendMessage">
+			<arg type="i"/>
+			<arg type="s"/>
+			<arg type="s"/>
+			<arg type="u"/>
+		</method>
+	</interface>
+</node>

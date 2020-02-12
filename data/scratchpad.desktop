@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Scratchpad Text Editor
+Comment=Create or open source code projects
+Exec=scratchpad
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+Icon=scratchpad
+Categories=Application;Utility;TextEditor;
